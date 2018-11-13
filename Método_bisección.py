@@ -1,3 +1,6 @@
+# Alexis Mendoza Valencia
+# Estudiante Tecnológico de Monterrey, campus Guadalajara
+
 # Método bisección
 # Es importante importar la libreria math
 import math
