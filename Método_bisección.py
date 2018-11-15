@@ -6,21 +6,26 @@
 import math
 
 """
-El método de la bisección consiste en tomar 2 valores
-en el rango entre el que se encuentra la solucion que
-buscamos. Por ejemplo, si queremos encontrar la raiz
-cuadrada de 4, vamos a intentar con valores 0 y 3.
-Supongamos que la función esta dada por:
-x^2 - 4 = 0
+Descripción: El método de la bisección consiste en tomar 
+             2 valores en el rango entre el que se encuentra 
+             la solucion que buscamos. Después calculamos el
+             promedio de los puntos y lo asignamos a uno de
+             los puntos, de tal forma que en cada iteración 
+             nos acerquemos mas a la solución.
+             
+Ejemplo:  si queremos encontrar la raiz cuadrada de 4, vamos
+          a intentar con valores 0 y 3. 
+          Supongamos que la función esta dada por:
+          x^2 - 4 = 0
+            Valor 1: 0^2 - 4 = -4
+            Valor 2: 3^2 - 4 = 5
 
-0^2 - 4 = -4
-3^2 - 4 = 5
-
-Ahora, si sacamos el promediode estos valores tenemos
-(3 + 0)/2 = 1.5
-1.5^2 - 4 = - 1.75 por lo que nos acercamos a la solucion.
-Si repetimos esto muchas veces, en algun momento llegaremos
-al resultado final.
+          Ahora, si sacamos el promedio de estos valores 
+          tenemos
+            (3 + 0)/2 = 1.5
+          1.5^2 - 4 = - 1.75 por lo que nos acercamos a 
+          la solucion. Si repetimos esto muchas veces, 
+          en algun momento llegaremos al resultado aproximado.
 
 Primero que nada, para este método utilizaremos
 un ejemplo para describirlo.
