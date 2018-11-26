@@ -76,11 +76,9 @@ def metodo_grafico(funcion, valor_menor, valor_mayor):
     # la siguiente linea
     # print(valores_X)
 
-    # Creamos el arreglo de valores de Y solo con ceros
-    valores_Y = np.zeros(100)
-
-    for i in range(len(valores_X)):
-        valores_Y[i] = funcion_cuadratica(valores_X[i])
+    # Creamos el arreglo de valores de Y a partir de los
+    # valores de X evaluados en la funcion.
+    valores_Y = [funcion(valores_X[i]) for i in range(len(valores_X))]
 
     # Y mostramos la grafica
     plt.plot(valores_X, valores_Y)
